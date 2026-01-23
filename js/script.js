@@ -97,11 +97,36 @@ function generateWhatsappMessage() {
   const validateUser = nameCliente.value.trim();
   const validateDate = date.value.trim();
 
+  // Validação de Data
+  function isValidDate(selectedDate) {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // zera a hora
+
+    const userDate = new Date(selectedDate);
+    userDate.setHours(0, 0, 0, 0);
+
+    return userDate >= today;
+  }
+
+  // Formatação de Data
+  function formatDateBR(dateString) {
+    const [year, month, day] = dateString.split('-');
+    return `${day}/${month}/${year}`;
+  }
+
   if (validateUser.length === 0) {
     alert("Prencha o nome, por favor");
     return null;
-  } else if (validateDate.length === 0);{
+  }
+
+  if (validateDate.length === 0) {
     alert("Preencha a data, por favor");
+    return null;
+  }
+
+  if (!isValidDate(validateDate)) {
+    alert('Escolha uma data válida (hoje ou futura)');
+    return null;
   }
 
   if (selectedServices.length === 0) {
@@ -109,16 +134,18 @@ function generateWhatsappMessage() {
     return null;
   }
 
-  let message =  `Olá! Me chamo ${validateUser}%0A`
+  let message =  `Olá! Me chamo ${validateUser}%0A`;
 
-  message += "Gostaria de agendar os seguintes serviços:%0A%0A"
+  message += "Gostaria de agendar os seguintes serviços:%0A%0A";
 
   selectedServices.forEach((s) => {
     message += `${s.name}%0A`;
   });
 
-  message += `%0APara a data: ${validateDate}`
-  message += "%0AObrigado";
+  const formattedDate = formatDateBR(validateDate);
+  message += `%0APara a data: ${formattedDate}`;
+  message += "%0AObrigado!";
+
   return message;
 }
 
@@ -131,8 +158,7 @@ sendOrder.addEventListener("click", () => {
 
   window.open(url, "_blank");
 
-  selectedServices = [];
-  renderCart();
+  setTimeout(() => {
+    window.location.reload();
+  }, 500);
 });
-
-console.log(generateWhatsappMessage());
