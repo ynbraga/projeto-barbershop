@@ -189,5 +189,5 @@ navbar.addEventListener('click', () => {
 })
 
 navbar.addEventListener('click', () => {
-  btnMobile
+  
 })
