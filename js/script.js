@@ -129,13 +129,17 @@ function generateWhatsappMessage() {
     return null;
   }
 
+  if (!isValidYear(validateDate)){
+    alert('Ano Inválido! Escolha uma data (ex.: 2025).')
+    return null;
+  }
+
   if (selectedServices.length === 0) {
     alert("Escolha pelo menos 1 serviço");
     return null;
   }
 
   let message =  `Olá! Me chamo ${validateUser}%0A`;
-
   message += "Gostaria de agendar os seguintes serviços:%0A%0A";
 
   selectedServices.forEach((s) => {
@@ -149,11 +153,22 @@ function generateWhatsappMessage() {
   return message;
 }
 
+function isValidYear(dateString) {
+  if (!dateString) return false;
+
+  const parts = dateString.split('-');
+  if (parts.length !== 3) return false;
+
+  const year = parts[0];
+
+  return /^\d{4}$/.test(year);
+}
+
 sendOrder.addEventListener("click", () => {
   const message = generateWhatsappMessage();
   if (!message) return;
 
-  const phone = "557998921906";
+  const phone = "5579981662338";
   const url = `https://wa.me/${phone}?text=${message}`;
 
   window.open(url, "_blank");
@@ -162,3 +177,17 @@ sendOrder.addEventListener("click", () => {
     window.location.reload();
   }, 500);
 });
+
+
+// JS MOBILE
+
+const navbar = document.getElementById('navbar');
+const btnMobile = document.getElementById('btnMobile');
+
+navbar.addEventListener('click', () => {
+  btnMobile.classList.add('open');
+})
+
+navbar.addEventListener('click', () => {
+  btnMobile
+})
