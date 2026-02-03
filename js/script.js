@@ -180,14 +180,20 @@ sendOrder.addEventListener("click", () => {
 
 
 // JS MOBILE
-
 const navbar = document.getElementById('navbar');
 const btnMobile = document.getElementById('btnMobile');
+const btnDrop = document.getElementById('btnDrop');
 
-navbar.addEventListener('click', () => {
-  btnMobile.classList.add('open');
+btnMobile.addEventListener('click', () => {
+  btnMobile.style.display = 'none';
+  btnDrop.style.display = 'flex';
+  navbar.classList.remove('navBar-open')
 })
 
-navbar.addEventListener('click', () => {
-  
+btnDrop.addEventListener('click', () => {
+  btnDrop.style.display = 'none';
+  btnMobile.style.display = 'flex';
+  navbar.classList.add('navBar-open')
 })
+
+
