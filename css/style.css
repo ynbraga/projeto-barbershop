@@ -484,9 +484,11 @@ section {
   }
 
   /* ================= ENDEREÇO ================= */
-  .addres h2 .title {
+  .addres h2 {
+    align-self: flex-start;
     font-size: 4rem;
     text-align: left;
+    
   } 
 
   .addres iframe {
