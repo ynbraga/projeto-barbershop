@@ -73,6 +73,10 @@ section {
   display: none;
 }
 
+.btnDrop {
+  display: none;
+}
+
 .btn {
   background: var(--main-color);
   color: #fff;
@@ -435,7 +439,7 @@ section {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    width: 90%;
+    width: 100%;
     gap: 0;
   }
 
@@ -457,7 +461,7 @@ section {
   }
 
   .menu .box-container {
-    width: 90%;
+    width: 100%;
   }
 
   .menu .box-container .box {
@@ -476,14 +480,14 @@ section {
   }
 
   .review .box-container {
-    width: 90%;
+    width: 100%;
   }
 
   /* ================= ENDEREÇO ================= */
-  .addres h2 {
+  .addres h2 .title {
     font-size: 4rem;
     text-align: left;
-  }
+  } 
 
   .addres iframe {
     width: 100%;
