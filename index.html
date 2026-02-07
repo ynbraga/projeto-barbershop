@@ -13,403 +13,417 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- Header // Navbar -->
-    <header class="header">
-      <section>
-        <a href="#" class="logo">
-          <img
-            src="/img/cranio-de-barbeiro-barbudo-e-bigode.png"
-            alt="logo"
-            height="100px"
-            width="100px"
-          />
-        </a>
-        <nav class="navbar" id="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">Sobre</a>
-          <a href="#servico">Serviços</a>
-          <a href="#review">Avaliações</a>
-          <a href="#addres">Endereço</a>
-        </nav>
+        <!-- Header // Navbar -->
+        <header class="header">
+          <section>
+            <a href="#" class="logo">
+              <img
+                src="/img/cranio-de-barbeiro-barbudo-e-bigode.png"
+                alt="logo"
+                height="100px"
+                width="100px"
+              />
+            </a>
+            <nav class="navbar" id="navbar">
+              <a href="#home">Home</a>
+              <a href="#about">Sobre</a>
+              <a href="#servico">Serviços</a>
+              <a href="#review">Avaliações</a>
+              <a href="#addres">Endereço</a>
+            </nav>
 
-        <div class="icons">
-          <img
-            class="btnDesktop"
-            src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
-            alt="search--v1"
-          />
-          <img
-            class="btnDesktop1"
-            id="cartIcon"
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
-            alt="shopping-cart--v1"
-          />
-          <img
-            class="btnDrop"
-            id="btnDrop"
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-filled/30/ffffff/bulleted-list.png"
-            alt="bulleted-list"
-          />
-          <img
-            class="btnMobile"
-            id="btnMobile"
-            width="30"
-            height="30"
-            src="https://img.icons8.com/ios-glyphs/30/ffffff/drag-list-down.png"
-            alt="drag-list-down"
-          />
-        </div>
-      </section>
-    </header>
-    <!---------------------------------------------------------------------------------------->
+            <div class="icons">
+              <img
+                class="btnDesktop"
+                src="https://img.icons8.com/ios-filled/30/ffffff/search--v1.png"
+                alt="search--v1"
+              />
+              <img
+                class="btnDesktop1"
+                id="cartIcon"
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/shopping-cart--v1.png"
+                alt="shopping-cart--v1"
+              />
+              <img
+                class="btnDrop"
+                id="btnDrop"
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-filled/30/ffffff/bulleted-list.png"
+                alt="bulleted-list"
+              />
+              <img
+                class="btnMobile"
+                id="btnMobile"
+                width="30"
+                height="30"
+                src="https://img.icons8.com/ios-glyphs/30/ffffff/drag-list-down.png"
+                alt="drag-list-down"
+              />
+            </div>
+          </section>
+        </header>
 
-    <!-- HOME PAGE -->
-    <div class="home-container">
-      <section id="home">
-        <div class="content">
-          <h2>BARBERSHOP</h2>
-          <h3>Tradição, Estilo e Precisão em cada corte</h3>
-          <p>
-            Oferecemos cortes masculinos, barba e tratamentos pensados para quem
-            valoriza qualidade, conforto e um visual impecável.
-          </p>
-          <a href="#servico" class="btn">Escolha seu serviço</a>
-        </div>
-      </section>
+                <!-- ABA CAARRINHO -->
+        <section class="cart-painel" id="cartPainel">
+          <div class="cart-form">
+            <h2>NOME E <span>DATA</span>:</h2>
+            <input type="text" placeholder="Seu nome" id="nameCliente" />
+            <input type="date" id="date" />
+          </div>
+
+          <div class="cart-header">
+            <h2>SERVIÇOS<span> SELECIONADOS</span>:</h2>
+            <button id="closeCart">X</button>
+          </div>
+
+          <div class="cart-services" id="cartServices">
+            <p>Nenhum item selecionado</p>
+          </div>
+          <button class="btn" id="sendOrder" data-service>
+            Enviar agendamento
+          </button>
+        </section>
+      </div>
     </div>
+        <!---------------------------------------------------------------------------------------->
+        <!-- HOME PAGE -->
+             <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div class="home-container">
+          <section id="home">
+            <div class="content">
+              <h2>BARBERSHOP</h2>
+              <h3 class="textoSplit">Tradição, Estilo e Precisão em cada corte</h3>
+              <p class="textoSplit2">
+                Oferecemos cortes masculinos, barba e tratamentos pensados para
+                quem valoriza qualidade, conforto e um visual impecável.
+              </p>
+              <a href="#servico" class="btn">Escolha seu serviço</a>
+            </div>
+          </section>
+        </div>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <h2 class="title">SOBRE <span>NÓS</span></h2>
-      <div class="row">
-        <div class="container-img">
-          <img
-            width="480px"
-            height="400px"
-            src="./img/young-man-barbershop-trimming-hair.jpg"
-            alt="sobre-nos"
-          />
-        </div>
-        <div class="content">
-          <h3>O que faz o nosso corte especial?</h3>
-          <p>
-            Nosso corte vai além da técnica. Cada detalhe é pensado para
-            valorizar o seu estilo, respeitando o formato do rosto, o tipo de
-            cabelo e a sua personalidade.
-          </p>
-          <p>
-            Trabalhamos com precisão, cuidado e atenção individual, garantindo
-            um resultado que não apenas acompanha tendências, mas realça quem
-            você é.
-          </p>
-          <button class="btn">Saiba mais</button>
-        </div>
-      </div>
-    </section>
+        <!-- ABOUT -->
+        <section class="about" id="about">
+          <h2 class="title">SOBRE <span>NÓS</span></h2>
+          <div class="row">
+            <div class="container-img">
+              <img
+                width="480px"
+                height="400px"
+                src="./img/young-man-barbershop-trimming-hair.jpg"
+                alt="sobre-nos"
+              />
+            </div>
+            <div class="content">
+              <h3>O que faz o nosso corte especial?</h3>
+              <p>
+                Nosso corte vai além da técnica. Cada detalhe é pensado para
+                valorizar o seu estilo, respeitando o formato do rosto, o tipo
+                de cabelo e a sua personalidade.
+              </p>
+              <p>
+                Trabalhamos com precisão, cuidado e atenção individual,
+                garantindo um resultado que não apenas acompanha tendências, mas
+                realça quem você é.
+              </p>
+              <button class="btn">Saiba mais</button>
+            </div>
+          </div>
+        </section>
 
-    <!---------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------->
 
-    <!-- ABA SERVIÇOS -->
-    <section class="menu" id="servico">
-      <h2 class="title">NOSSOS <span>SERVIÇOS</span></h2>
-      <div class="box-container">
-        <div class="box">
-          <img src="./img/cabelo.jpg" alt="" width="200px" height="200px" />
-          <h3>Cabelo</h3>
-          <div class="price">R$ 59,99 <span> R$ 69,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Cabelo"
-            data-img="./img/cabelo.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-        <div class="box">
-          <img
-            src="./img/cabelo-e-barba.jpg"
-            alt=""
-            width="200px"
-            height="200px"
-          />
-          <h3>Cabelo e Barba</h3>
-          <div class="price">R$ 99,99 <span> R$ 109,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Cabelo e Barba"
-            data-img="./img/cabelo-e-barba.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-        <div class="box">
-          <img src="./img/infantil.jpg" alt="" width="200px" height="200px" />
-          <h3>Infantil</h3>
-          <div class="price">R$ 49,99 <span> R$ 59,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Infantil"
-            data-img="./img/infantil.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-        <div class="box">
-          <img
-            src="./img/barba-simples.jpg"
-            alt=""
-            width="200px"
-            height="200px"
-          />
-          <h3>Barba</h3>
-          <div class="price">R$ 39,99 <span> R$ 49,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Barba"
-            data-img="./img/barba-simples.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-        <div class="box">
-          <img
-            src="./img/barba-terapia.jpg"
-            alt=""
-            width="200px"
-            height="200px"
-          />
-          <h3>Barba Terapia</h3>
-          <div class="price">R$ 59,99 <span> R$ 69,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Barba Terapia"
-            data-img="./img/barba-terapia.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-        <div class="box">
-          <img
-            src="./img/hidratração.jpg"
-            alt=""
-            width="200px"
-            height="200px"
-          />
-          <h3>Corte + Hidratação</h3>
-          <div class="price">R$ 119,99 <span> R$ 149,99</span></div>
-          <button
-            href="#"
-            class="btnService"
-            data-service="Corte + Hidratação"
-            data-img="./img/hidratração.jpg"
-          >
-            Selecionar
-          </button>
-        </div>
-      </div>
-    </section>
-    <!---------------------------------------------------------------------------------------->
+        <!-- ABA SERVIÇOS -->
+        <section class="menu" id="servico">
+          <h2 class="title">NOSSOS <span>SERVIÇOS</span></h2>
+          <div class="box-container">
+            <div class="box">
+              <img src="./img/cabelo.jpg" alt="" width="200px" height="200px" />
+              <h3>Cabelo</h3>
+              <div class="price">R$ 59,99 <span> R$ 69,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Cabelo"
+                data-img="./img/cabelo.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+            <div class="box">
+              <img
+                src="./img/cabelo-e-barba.jpg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <h3>Cabelo e Barba</h3>
+              <div class="price">R$ 99,99 <span> R$ 109,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Cabelo e Barba"
+                data-img="./img/cabelo-e-barba.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+            <div class="box">
+              <img
+                src="./img/infantil.jpg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <h3>Infantil</h3>
+              <div class="price">R$ 49,99 <span> R$ 59,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Infantil"
+                data-img="./img/infantil.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+            <div class="box">
+              <img
+                src="./img/barba-simples.jpg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <h3>Barba</h3>
+              <div class="price">R$ 39,99 <span> R$ 49,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Barba"
+                data-img="./img/barba-simples.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+            <div class="box">
+              <img
+                src="./img/barba-terapia.jpg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <h3>Barba Terapia</h3>
+              <div class="price">R$ 59,99 <span> R$ 69,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Barba Terapia"
+                data-img="./img/barba-terapia.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+            <div class="box">
+              <img
+                src="./img/hidratração.jpg"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <h3>Corte + Hidratação</h3>
+              <div class="price">R$ 119,99 <span> R$ 149,99</span></div>
+              <button
+                href="#"
+                class="btnService"
+                data-service="Corte + Hidratação"
+                data-img="./img/hidratração.jpg"
+              >
+                Selecionar
+              </button>
+            </div>
+          </div>
+        </section>
+        <!---------------------------------------------------------------------------------------->
 
-    <!-- ABA CLIENTES -->
-    <section class="review" id="review">
-      <h2 class="title">NOSSOS <span>CLIENTES</span></h2>
-      <div class="box-container">
-        <div class="box">
-          <img src="./img/quote-img.png" alt="comentario" />
-          <p>
-            Ambiente top e atendimento excelente. O corte ficou exatamente como
-            eu queria. Dá pra ver que os caras realmente entendem do que fazem.
-          </p>
-          <img src="./img/modelo1.jpg" alt="foto-cliente" class="user" />
-          <h3>João S.</h3>
-          <div class="stars">
+        <!-- ABA CLIENTES -->
+        <section class="review" id="review">
+          <h2 class="title">NOSSOS <span>CLIENTES</span></h2>
+          <div class="box-container">
+            <div class="box">
+              <img src="./img/quote-img.png" alt="comentario" />
+              <p>
+                Ambiente top e atendimento excelente. O corte ficou exatamente
+                como eu queria. Dá pra ver que os caras realmente entendem do
+                que fazem.
+              </p>
+              <img src="./img/modelo1.jpg" alt="foto-cliente" class="user" />
+              <h3>João S.</h3>
+              <div class="stars">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                  alt="star-half-empty"
+                />
+              </div>
+            </div>
+            <div class="box">
+              <img src="./img/quote-img.png" alt="comentario" />
+              <p>
+                Já fui em várias barbearias, mas essa se destacou. Atenção aos
+                detalhes, barba impecável e um cuidado que faz diferença.
+              </p>
+              <img src="./img/modelo2.jpg" alt="foto-cliente" class="user" />
+              <h3>Carlos M.</h3>
+              <div class="stars">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
+                  alt="star-half-empty"
+                />
+              </div>
+            </div>
+            <div class="box">
+              <img src="./img/quote-img.png" alt="comentario" />
+              <p>
+                Corte na régua, barba bem alinhada e atendimento de primeira. Dá
+                gosto voltar quando o resultado é sempre consistente
+              </p>
+              <img src="./img/modelo3.jpg" alt="foto-cliente" class="user" />
+              <h3>Rafael A.</h3>
+              <div class="stars">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
+                  alt="star"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!---------------------------------------------------------------------------------------->
+
+        <!-- ABA ENDEREÇO -->
+        <section class="addres" id="addres">
+          <h2 class="title">NOSSO <span>ENDEREÇO</span></h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4327096660772!2d-37.055358603210465!3d-10.930649999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3f88c2f5cc7%3A0xe068299dc3be225e!2sThe%20barbers%20Aju!5e0!3m2!1spt-BR!2sbr!4v1768580187721!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+        <!---------------------------------------------------------------------------------------->
+
+        <!-- RODAPÉ (REDES SOCIAIS) -->
+        <section class="footer">
+          <div class="share">
             <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png"
+              alt="instagram-new--v1"
             />
             <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
+              alt="facebook--v1"
             />
             <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
-              alt="star-half-empty"
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png"
+              alt="twitterx--v1"
             />
           </div>
-        </div>
-        <div class="box">
-          <img src="./img/quote-img.png" alt="comentario" />
-          <p>
-            Já fui em várias barbearias, mas essa se destacou. Atenção aos
-            detalhes, barba impecável e um cuidado que faz diferença.
-          </p>
-          <img src="./img/modelo2.jpg" alt="foto-cliente" class="user" />
-          <h3>Carlos M.</h3>
-          <div class="stars">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/30/ffffff/star-half-empty.png"
-              alt="star-half-empty"
-            />
-          </div>
-        </div>
-        <div class="box">
-          <img src="./img/quote-img.png" alt="comentario" />
-          <p>
-            Corte na régua, barba bem alinhada e atendimento de primeira. Dá
-            gosto voltar quando o resultado é sempre consistente
-          </p>
-          <img src="./img/modelo3.jpg" alt="foto-cliente" class="user" />
-          <h3>Rafael A.</h3>
-          <div class="stars">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-filled/ffffff/30/star.png"
-              alt="star"
-            />
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
+      </div>
     <!---------------------------------------------------------------------------------------->
 
-    <!-- ABA ENDEREÇO -->
-    <section class="addres" id="addres">
-      <h2 class="title">NOSSO <span>ENDEREÇO</span></h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.4327096660772!2d-37.055358603210465!3d-10.930649999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3f88c2f5cc7%3A0xe068299dc3be225e!2sThe%20barbers%20Aju!5e0!3m2!1spt-BR!2sbr!4v1768580187721!5m2!1spt-BR!2sbr"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-    <!---------------------------------------------------------------------------------------->
-
-    <!-- RODAPÉ (REDES SOCIAIS) -->
-    <section class="footer">
-      <div class="share">
-        <img
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new--v1.png"
-          alt="instagram-new--v1"
-        />
-        <img
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"
-          alt="facebook--v1"
-        />
-        <img
-          width="50"
-          height="50"
-          src="https://img.icons8.com/ios-filled/50/ffffff/twitterx--v1.png"
-          alt="twitterx--v1"
-        />
-      </div>
-    </section>
-    <!---------------------------------------------------------------------------------------->
-
-    <!-- ABA CAARRINHO -->
-    <section class="cart-painel" id="cartPainel">
-      <div class="cart-form">
-        <h2>NOME E <span>DATA</span>:</h2>
-        <input type="text" placeholder="Seu nome" id="nameCliente" />
-        <input type="date" id="date" />
-      </div>
-
-      <div class="cart-header">
-        <h2>SERVIÇOS<span> SELECIONADOS</span>:</h2>
-        <button id="closeCart">X</button>
-      </div>
-
-      <div class="cart-services" id="cartServices">
-        <p>Nenhum item selecionado</p>
-      </div>
-      <button class="btn" id="sendOrder" data-service>
-        Enviar agendamento
-      </button>
-    </section>
-    <!---------------------------------------------------------------------------------------->
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,25 @@
+// GSAP ANIMATION
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+
+// Cria o efeito de smooth scrolling
+ScrollSmoother.create({
+  smooth: 1.5,
+  effects: true,
+});
+
+
+// Split Text na seção Home
+function animateHomeText() {
+  const splitHome = document.querySelectorAll(".textoSplit, .textoSplit2"); 
+
+splitHome.forEach((e) => {
+  const split = SplitText.create(e, 
+    { type: "lines, words, chars",}
+  );
+});
+}
+
+
 console.log("JS Conectado");
 
 // Evento para aba do carrinho;
